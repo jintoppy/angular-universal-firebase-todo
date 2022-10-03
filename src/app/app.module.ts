@@ -6,23 +6,22 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { HeaderComponent } from './components/header/header.component';
 import { AddTodoComponent } from './components/add-todo/add-todo.component';
-import {MatRadioModule} from '@angular/material/radio';
-import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
-import {MatButtonModule} from '@angular/material/button';
-import { HttpClientModule } from "@angular/common/http";
-import {LayoutModule} from '@angular/cdk/layout';
-import {MatListModule} from '@angular/material/list';
-
-
+import { MatButtonModule } from '@angular/material/button';
+import { HttpClientModule } from '@angular/common/http';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -30,7 +29,8 @@ import {MatListModule} from '@angular/material/list';
     HomeComponent,
     LoginComponent,
     HeaderComponent,
-    AddTodoComponent
+    AddTodoComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -47,9 +47,9 @@ import {MatListModule} from '@angular/material/list';
     MatIconModule,
     HttpClientModule,
     LayoutModule,
-    MatListModule
+    MatListModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

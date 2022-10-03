@@ -4,8 +4,7 @@
   status = 200
 
 [build]
-  command = "npm run build:ssr"
-  publish = "dist/angular-firebase-todo/browser"
+  command = "npm run build:ssr && npm run copy:files"
 
 [functions]
   included_files = ["dist/**"]

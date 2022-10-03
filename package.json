@@ -12,6 +12,7 @@
     "lint:fix": "ng lint --fix",
     "dev:ssr": "ng run angular-firebase-todo:serve-ssr",
     "serve:ssr": "node dist/angular-firebase-todo/server/main.js",
+    "copy:files": "node ./scripts/copyFiles.js",
     "build:ssr": "ng build && ng run angular-firebase-todo:server:production",
     "prerender": "ng run angular-firebase-todo:prerender"
   },
@@ -32,6 +33,7 @@
     "@netlify/functions": "^1.2.0",
     "@nguniversal/express-engine": "^14.2.0",
     "express": "^4.15.2",
+    "fs-extra": "^10.1.0",
     "ngx-cookie": "^6.0.1",
     "ngx-cookie-service-ssr": "^14.0.1",
     "rxjs": "~7.5.0",
