@@ -29,11 +29,13 @@
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/platform-server": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "@netlify/functions": "^1.2.0",
     "@nguniversal/express-engine": "^14.2.0",
     "express": "^4.15.2",
     "ngx-cookie": "^6.0.1",
     "ngx-cookie-service-ssr": "^14.0.1",
     "rxjs": "~7.5.0",
+    "serverless-http": "^3.0.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

@@ -4,8 +4,11 @@
   status = 200
 
 [build]
-  command = "ng build --configuration production && ng run angular-firebase-todo:serverless:production"
+  command = "ng build:ssr --configuration production && ng run angular-firebase-todo:serverless:production"
   publish = "dist/angular-firebase-todo/browser"
 
 [[plugins]]
   package = "@netlify/plugin-angular-universal"
+
+[functions]
+  included_files = ["dist/**"]
