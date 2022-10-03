@@ -12,7 +12,7 @@
     "lint:fix": "ng lint --fix",
     "dev:ssr": "ng run angular-firebase-todo:serve-ssr",
     "serve:ssr": "node dist/angular-firebase-todo/server/main.js",
-    "build:ssr": "ng build && ng run angular-firebase-todo:server",
+    "build:ssr": "ng build && ng run angular-firebase-todo:server:production",
     "prerender": "ng run angular-firebase-todo:prerender"
   },
   "private": true,

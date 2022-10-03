@@ -10,12 +10,13 @@ import { AppServerModule } from './src/main.server';
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
+  console.log('inside app method');
   const server = express();
   const distFolder = join(process.cwd(), 'dist/angular-firebase-todo/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html'))
     ? 'index.original.html'
     : 'index';
-
+  console.log('index.html exists', existsSync(join(distFolder, 'index.html')));
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/main/modules/express-engine)
   server.engine(
     'html',
@@ -39,6 +40,7 @@ export function app(): express.Express {
 
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
+    console.log('inside server render');
     res.render(indexHtml, {
       req,
       providers: [
