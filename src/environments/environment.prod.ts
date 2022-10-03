@@ -2,5 +2,6 @@ import { firebaseConfig } from './firebase';
 
 export const environment = {
   production: true,
-  firebase: firebaseConfig
+  baseUrl: 'https://rainbow-florentine-bf5376.netlify.app',
+  firebase: firebaseConfig,
 };
