@@ -4,7 +4,7 @@
   status = 200
 
 [build]
-  command = "ng run build:ssr --configuration production"
+  command = "ng run build:ssr"
   publish = "dist/angular-firebase-todo/browser"
 
 [functions]
