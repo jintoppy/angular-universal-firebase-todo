@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/*"
-  to = ".netlify/functions/start"
+  to = "/.netlify/functions/start"
   status = 200
 
 [build]
